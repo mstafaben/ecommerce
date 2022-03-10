@@ -1,0 +1,28 @@
+﻿@model CartItemWithDetailsServiceModel
+
+<div class="col-md-12">
+    <div class="col-md-6">
+        <img src=@Model.ImageUrl width="287" height="175" asp-append-version="true" />
+    </div>
+    <div class="col-md-5">
+        <p class="mtext-117 m-t-12">@Model.Description</p>
+
+        <hr />
+        <table>
+            <tbody>
+                <tr>
+                    <td><span class="stext-106">Numéro de série: </span><b>&nbsp;@Model.SerialNumber</b></td>
+                </tr>
+                <tr>
+                    <td><span class="stext-106">Note: </span><b>&nbsp;@Model.Note</b></td>
+                </tr>
+                <tr>
+                    <td><span class="stext-106">Vendeur: </span><b>&nbsp;@Model.Vendor</b></td>
+                </tr>
+                <tr>
+                    <td><span class="stext-106">Département: </span><b>&nbsp;@Model.DepartmentDescription</b></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
